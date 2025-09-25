@@ -5,7 +5,7 @@ int main(void) {
     int a, b;
     std::cin >> a >> b;
     std::cout << "int" << std::endl;
-    std::cout << "4 bytes" << std::endl;
+    std::cout << "32 bites" << std::endl;
     std::cout << pow(2, 31) * -1 << " - " << pow(2, 31) - 1 << std::endl;
     std::cout << a + b << std::endl;
     std::cout << a - b << std::endl;
