@@ -1,16 +1,18 @@
 #include <iostream>
 #include <cmath>
 
-int main(void) {
-    int a, b;
-    std::cin >> a >> b;
-    std::cout << "int" << std::endl;
-    std::cout << "32 bites" << std::endl;
-    std::cout << pow(2, 31) * -1 << " - " << pow(2, 31) - 1 << std::endl;
-    std::cout << a + b << std::endl;
-    std::cout << a - b << std::endl;
-    std::cout << b - a << std::endl;
-    std::cout << a * b << std::endl;
+int main() {
+    int r;
+    float konstanta = 13.1415;
+    std::cout << "Введите радиус: ";
+    std::cin >> r;
+    std::cout << "Тип: float" << std::endl; //выбрал float, тк число с плавающей запятой(не целое)
+    std::cout << "Размер в байтах: " << sizeof(konstanta) << std::endl;
+    float minsize = pow(2, -126);
+    float maxsize = (2 - pow(2, -23)) * pow(2, 127);
+    std::cout << "Минимальное значение: " << minsize << std::endl;
+    std::cout << "Максимальное значение: " << maxsize << std::endl;
+    std::cout << "V = " << (4 * konstanta * pow(r, 3)) / 3 << std::endl;
+    std::cout << "S = " << 4 * konstanta * pow(r, 2) << std::endl;
+    return 0;
 }
-
-//выбрал int т.к в задании используются неотрицательные целые число, но их разность может быть отрицательной
